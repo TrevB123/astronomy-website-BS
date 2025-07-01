@@ -1,0 +1,635 @@
+/* This is the main css stylesheet for the Astronomy Club website */
+
+/* Setting root variables */
+
+:root {
+  /* Overall page color */
+  --main-bg-color: rgb(0, 0, 87);
+
+  /* Default typography */
+  --h1: 22px; text-align: center;
+  --h2: 19px; text-align: center;
+  --p: 16px;
+}
+
+/* Overriding global variables from bootstrap */
+
+.btn {
+--bs-nav-link-padding-y: 0px;
+--bs-nav-link-padding-x: 0px;
+}
+
+/* Universal selectors */
+
+/* unvisited link */
+a:link {
+  color: #ff8400;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color:#cccccc
+}
+
+/* Overall styles for background color and other selectors - set padding and margin to zero */
+
+Body {
+    background-color: var(--main-bg-color);
+    padding: 0px;
+    margin: 0px auto;
+    font-size: var(--p);
+    font-size: var(--h1);
+    font-size: var(--h2);
+    max-width: 1200px;
+}
+
+footer p {
+  font-size: 12px !important;
+}
+
+footer p a:hover, p a:active, p a:visited {
+  color:#999999;
+}
+
+/*  Make all paragraph links readable in various states */
+
+.p p a:hover, p a:active, p a:visited {
+  color: #cccccc;
+}
+
+ul li a:hover {
+  color: #cccccc;
+}
+
+/* Make header section sticky and set BG color, spacing */
+
+.header-container {
+  position: sticky;
+  top: 0;
+  padding: 20px 15px 10px 15px;
+  background-color: rgb(0, 0, 87);
+  z-index: 5;
+}
+
+/* Center the logo and title in the header horizontally */
+
+#header-logo, #name-logo {
+  padding:0px;
+  margin:0px;
+  display:flex;
+  justify-content:center;
+}
+
+/* Arrangement of header menu buttons 
+
+.nav-menu-container {
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+*/
+
+/* Bootstrap overides for the menu */
+
+/* Custom Navbar Colors */
+.navbar-custom {
+    background-color: rgb(0, 0, 87); /* color for the toggler icon */
+    color: #000000; /* Text color */
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-custom 
+.navbar-toggler {
+border-color: #000000; /* Border color for the toggler button */
+border-width: 3px;
+background-color: #ff8400;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+}
+
+.navbar-toggler:hover {
+  background-color:  white;
+  color: black;
+}
+
+/* .nav-link-active {
+color: white;
+background-color:#000000;
+} */
+
+.button-special {
+    background-color: #ff8400;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin: 5px;
+    padding: 10px 25px;
+    font-size: var(--p);
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+}
+
+.button-special:link {
+  background-color:#ffffff;
+  color: black;
+}
+
+.button-special a:link {
+  color: black;
+}
+
+.button-special:hover {
+    background-color:#ffffff;
+    color: black;
+}
+
+
+.button-special:active {
+  background-color: black !important;
+  color: white;
+}
+
+.button-special a:active {
+  background-color: black;
+  color: white;
+}
+
+.button-special:visited {
+    background-color:#000000;
+}
+
+
+/* .boxes {
+	padding: 0px 0px 300px;
+} */
+
+
+/* Column overrides for each row and page requirement */
+
+/* Homepage blocks */
+
+/* add a keyline border around every block with a radius */
+
+.border {
+  border-radius: 15px;
+  border: 1px solid #cccccc;
+  z-index: 3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Top hero – full width block - Join Now */
+
+.background-cover {
+  position: relative;
+  z-index: 1;
+    
+}
+
+.background-cover:before {
+   content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/starry-night.jpg') center center;
+    opacity: .70;
+    border-radius: 15px;
+}
+
+/* Three blog posts in row – June 2025, May 2025, March 2025 */
+/* First block in row of three */
+
+.background-row-2-col-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-2-col-1:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/planets-in-a-row.jpg') center center;
+    opacity: .25;
+    border-radius: 15px;
+}
+
+.background-row-2-col-1:hover {
+    background-color: #aa5800 !important;
+    border-radius: 15px;
+}
+
+/* Second block in row of three */
+
+.background-row-2-col-2 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-2-col-2:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/telescope.jpg') center center;
+    opacity: .25;
+    border-radius: 15px;
+}
+
+.background-row-2-col-2:hover {
+    background-color: #aa5800 !important;
+     border-radius: 15px;
+}
+
+/* Third block in row of three */
+
+.background-row-2-col-3 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-2-col-3:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/mars-vista.jpg') center center;
+    opacity: .35;
+    border-radius: 15px;
+}
+
+.background-row-2-col-3:hover {
+    background-color: #aa5800 !important;
+     border-radius: 15px;
+}
+
+/* Two blocks in a row – Our Observatory and Events & Meetings */
+
+/* First Block */
+
+.background-row-3-col-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-3-col-1:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/observatory.jpg') center center;
+    opacity: .25;
+    border-radius: 15px;
+}
+
+.background-row-3-col-1:hover {
+    background-color: #aa5800 !important;
+    border-radius: 15px;
+}
+
+/* Second block */
+
+.background-row-3-col-2 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-3-col-2:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/events-and-meetings.jpg') center center;
+    opacity: .25;
+    border-radius: 15px;
+}
+
+.background-row-3-col-2:hover {
+    background-color: #aa5800 !important;
+    border-radius: 15px;
+}
+
+
+/* Resources, About Us, Contact us in row of three */
+
+/* First block */
+
+.background-row-4-col-1 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-4-col-1:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/resources-books.jpg') center center;
+    opacity: .25;
+    border-radius: 15px;
+}
+
+.background-row-4-col-1:hover {
+    background-color: #aa5800 !important;
+    border-radius: 15px;
+}
+
+/* Second block */
+
+.background-row-4-col-2 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-4-col-2:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/about-us-retro.jpg') center center;
+    opacity: .30;
+    border-radius: 15px;
+}
+
+.background-row-4-col-2:hover {
+    background-color: #aa5800 !important;
+    border-radius: 15px;
+}
+
+/* Third block */
+
+.background-row-4-col-3 {
+    position: relative;
+    z-index: 1;
+}
+
+.background-row-4-col-3:before {
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../assets/images/astronomy-club-logo-sm.png') center center;
+    opacity: .20;
+    border-radius: 15px;
+}
+
+.background-row-4-col-3:hover {
+    background-color: #aa5800 !important;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body elements formatting */
+
+/* About page */
+/* Set full width column to left aligned */
+
+.col-about-100 p {
+ text-align: left;
+}
+
+/* Blog page elements formatting also used for page top image display */
+
+.blog-header-image-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.blog-header-image {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999999
+}
+
+
+/* Contact page elements */
+
+/* Contact form flexbox formatting */
+
+.col-outer-margin-form {
+  border: 1px solid #cccccc;
+	border-radius: 6px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.form-details-link {
+  text-align: center;
+}
+
+.form-details-link a:hover {
+  color:#999999;
+}
+
+.contact-section {
+    background: #bdc3c7;
+    padding: 30px 0 50px 0;
+    text-align: center;
+    width: 100%;
+    h3 {
+        margin: 0;
+        padding: 0;
+        color: rgba(255, 255, 255);
+        font-size: 25px;
+        margin-bottom: 20px;
+        color:#000000;
+    }
+
+    /* experimenting with the use of attribute selectors [] */
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 100%;
+        height: 650px;
+        background: rgba(0, 0, 0, 0.30);
+        text-align: left;
+        padding: 10px 0;
+        .name,
+        .email,
+        .enquiry,
+        .subject,
+        .content
+        
+         {
+            width: 80%;
+            margin: 0 auto;
+            label {
+                display: block;
+                padding: 0;
+                margin: 0;
+                color: #ffffff;
+            }
+        }
+        
+        .name {
+          input[name="name"] {
+            width: 100%;
+            padding: 0px;
+            color: black;
+            font-size:22px;
+          }
+        }
+
+        .email {
+        input[name="email"] {
+            width: 100%;
+            padding: 0px;
+            color: black;
+            font-size:22px;
+          }
+        }
+
+        .enquiry {
+          input[name="enquiry"] {
+            width: 100%;
+            padding: 0px;
+            color: black;
+            font-size:22px;
+          }
+        }
+
+        .subject {
+            height: 62px;
+            input[name="subject"] {
+                width: 100%;
+                padding: 0px;
+                color: black;
+                font-size:22px;
+            }
+        }
+        .content {
+            textarea {
+                width: 100%;
+                padding: 0px;
+                resize: none;
+                color: black;
+                font-size:22px;
+            }
+            button {
+                margin-top: 15px;
+                width: 100%;
+                background: #ff8400;
+                padding: 10px 50px 10px 50px;
+                border: 2px solid #000000;
+                color:#000000;
+                border-radius: 8px;
+                font-weight: bold;
+                &:hover {
+                    background: #ffffff;
+                    border: 2px solid #000000;
+                    cursor: pointer;
+                    color:#000000;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* This is commented out because it uses media queries which are not until week 3 */
+/* @media screen and (max-width: 1000px) {
+	
+	.col-25 {
+		width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	
+	.col-50, .col-33, .col-25 {
+		width: calc(100% - 30px);
+	}
+} */
+
+/* Footer elements */
+
+.col-hp-footer-100 {
+  width: calc(100% - 30px);
+  height: 100%;
+  color:#c0c0c0;
+  border: 0px;
+  text-align:center;
+  padding-top: 20;
+  padding-bottom: 10px;
+}
+
+.footer-container {
+  padding: 0px 15px;
+}
+
+.col-hp-footer-100 p {
+  font-size: 12px;
+}
+
+
+
