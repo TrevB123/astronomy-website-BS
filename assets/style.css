@@ -95,19 +95,6 @@ ul li a:hover {
   justify-content:center;
 }
 
-/* Arrangement of header menu buttons 
-
-.nav-menu-container {
-margin-top: 10px;
-margin-left: 20px;
-margin-right: 20px;
-margin-bottom: 10px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-}
-*/
-
 /* Bootstrap overides for the menu */
 
 /* Custom Navbar Colors */
@@ -136,11 +123,6 @@ background-color: #ff8400;
   background-color:  white;
   color: black;
 }
-
-/* .nav-link-active {
-color: white;
-background-color:#000000;
-} */
 
 .button-special {
     background-color: #ff8400;
@@ -171,7 +153,6 @@ background-color:#000000;
     background-color:#ffffff;
     color: black;
 }
-
 
 .button-special:active {
   background-color: black !important;
@@ -433,18 +414,6 @@ background-color:#000000;
     background-color: #aa5800 !important;
     border-radius: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Body elements formatting */
 
