@@ -159,19 +159,21 @@ background-color: #ff8400;
   color: white;
 }
 
-.button-special a:active {
-  background-color: black;
+ .button-special a:active {
   color: white;
-}
+} 
 
 .button-special:visited {
     background-color:#000000;
 }
 
+div:nth-child(3) > ul {
+  padding: 0px !important;
+}
 
-/* .boxes {
-	padding: 0px 0px 300px;
-} */
+div:nth-child(9) > ul {
+  padding: 0px !important;
+}
 
 
 /* Column overrides for each row and page requirement */
@@ -417,13 +419,6 @@ background-color: #ff8400;
 
 /* Body elements formatting */
 
-/* About page */
-/* Set full width column to left aligned */
-
-.col-about-100 p {
- text-align: left;
-}
-
 /* Blog page elements formatting also used for page top image display */
 
 .blog-header-image-container {
@@ -437,168 +432,36 @@ background-color: #ff8400;
   border: 1px solid #999999
 }
 
-
 /* Contact page elements */
 
-/* Contact form flexbox formatting */
-
-.col-outer-margin-form {
-  border: 1px solid #cccccc;
-	border-radius: 6px;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-.form-details-link {
-  text-align: center;
-}
-
-.form-details-link a:hover {
-  color:#999999;
-}
-
-.contact-section {
-    background: #bdc3c7;
-    padding: 30px 0 50px 0;
-    text-align: center;
-    width: 100%;
-    h3 {
-        margin: 0;
-        padding: 0;
-        color: rgba(255, 255, 255);
-        font-size: 25px;
-        margin-bottom: 20px;
-        color:#000000;
+.custom-form {
+      background-color: #5bc6f7; /* very light blue background */
+      color: #000;               /* black text */
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
+      border: 1px solid black
     }
 
-    /* experimenting with the use of attribute selectors [] */
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0 auto;
-        width: 100%;
-        height: 650px;
-        background: rgba(0, 0, 0, 0.30);
-        text-align: left;
-        padding: 10px 0;
-        .name,
-        .email,
-        .enquiry,
-        .subject,
-        .content
-        
-         {
-            width: 80%;
-            margin: 0 auto;
-            label {
-                display: block;
-                padding: 0;
-                margin: 0;
-                color: #ffffff;
-            }
-        }
-        
-        .name {
-          input[name="name"] {
-            width: 100%;
-            padding: 0px;
-            color: black;
-            font-size:22px;
-          }
-        }
-
-        .email {
-        input[name="email"] {
-            width: 100%;
-            padding: 0px;
-            color: black;
-            font-size:22px;
-          }
-        }
-
-        .enquiry {
-          input[name="enquiry"] {
-            width: 100%;
-            padding: 0px;
-            color: black;
-            font-size:22px;
-          }
-        }
-
-        .subject {
-            height: 62px;
-            input[name="subject"] {
-                width: 100%;
-                padding: 0px;
-                color: black;
-                font-size:22px;
-            }
-        }
-        .content {
-            textarea {
-                width: 100%;
-                padding: 0px;
-                resize: none;
-                color: black;
-                font-size:22px;
-            }
-            button {
-                margin-top: 15px;
-                width: 100%;
-                background: #ff8400;
-                padding: 10px 50px 10px 50px;
-                border: 2px solid #000000;
-                color:#000000;
-                border-radius: 8px;
-                font-weight: bold;
-                &:hover {
-                    background: #ffffff;
-                    border: 2px solid #000000;
-                    cursor: pointer;
-                    color:#000000;
-                }
-            }
-        }
+    .btn-orange {
+      background-color: #ff8400;
+      color: Black;
+       border: 3px solid black
     }
-}
 
+    .btn-orange:hover {
+      background-color: white;
+      color: black;
+    }
 
+    .btn-orange:active {
+      background-color: black !important;
+      color: white !important;
+    }
 
-/* This is commented out because it uses media queries which are not until week 3 */
-/* @media screen and (max-width: 1000px) {
-	
-	.col-25 {
-		width: calc(50% - 30px);
-	}
-}
-
-@media screen and (max-width: 800px) {
-	
-	.col-50, .col-33, .col-25 {
-		width: calc(100% - 30px);
-	}
-} */
-
-/* Footer elements */
-
-.col-hp-footer-100 {
-  width: calc(100% - 30px);
-  height: 100%;
-  color:#c0c0c0;
-  border: 0px;
-  text-align:center;
-  padding-top: 20;
-  padding-bottom: 10px;
-}
-
-.footer-container {
-  padding: 0px 15px;
-}
-
-.col-hp-footer-100 p {
-  font-size: 12px;
-}
+    .form-label {
+      color: black;
+    }
 
 
 
